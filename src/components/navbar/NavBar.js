@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Navbar, Nav, Button } from "react-bootstrap";
+import { Navbar, Nav, Button, Dropdown } from "react-bootstrap";
 
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -11,41 +11,77 @@ function NavBar() {
 
     const [show, setShow] = useState(false);
     const showDropdown = (e)=>{
-    setShow(!show);
+        setShow(!show);
     }
     const hideDropdown = e => {
-    setShow(false);
+        setShow(false);
     }
 
-    const [show1, setShow1] = useState(false);
-    const showDropdown1 = (e)=>{
-    setShow1(!show1);
+    const showDropdown1 = (f)=>{
+        setShow(!show);
     }
-    const hideDropdown1 = e => {
-    setShow1(false);
+    const hideDropdown1 = f => {
+        setShow(false);
     }
 
 
 
 
     return (
-        <Navbar className='navbar-container' expand="lg">
+        <Navbar className='navbar-container'  style={{ ".navbar .dropdown:hover .dropdown-menu": { display: "block" } }} expand="lg">
         <Navbar.Brand href="#">
             <h1 className='navbar-logo-h1' >
                 <img className='navbar-logo-img' src={logo} alt='' />
                 MCM Phoenix
             </h1>
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Toggle style={{padding:"10px 30px 10px"}}  aria-controls="basic-navbar-nav" />
 
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="navbar-contents">
-            <Nav.Link href="#">Home</Nav.Link>
-            <Nav.Link href="#">About</Nav.Link>
-            <Nav.Link href="#">Contact</Nav.Link>
-          </Nav>
-          <Nav>
-            <Button variant="outline-primary">Sign Up</Button>
+        <Navbar.Collapse className='navbar-contents-container' id="basic-navbar-nav">
+            <Nav className="navbar-contents">
+                <Nav.Link className="navbar-links" href="/">
+                    <span className='navbar-links-span'>Home</span>
+                </Nav.Link>
+                <Nav.Link className="navbar-links" href="/about">
+                    <span className='navbar-links-span'>About</span>
+                </Nav.Link>
+                <Nav.Link className="navbar-links" href="/masjid-reconstruction">
+                    <span className='navbar-links-span'>Masjid Reconstruction</span>
+                </Nav.Link>
+                
+                <Dropdown className='navbar-dropdown-container'>
+                    <Dropdown.Toggle className='navbar-dropdown-links' variant="success" 
+                    id="dropdown-basic">
+                        Services
+                    </Dropdown.Toggle>
+                    <Dropdown.Menu variant="light" show>
+                        <Dropdown.Item href='/quran-programs'>
+                            Youth Quran Program
+                        </Dropdown.Item>
+                        <Dropdown.Divider />
+                        <Dropdown.Item href='/quran-programs'>
+                            Adult Quran Program
+                        </Dropdown.Item>
+                        <Dropdown.Divider />
+                        <Dropdown.Item href='/quran-programs'>
+                            New Muslim Quran Program
+                        </Dropdown.Item>
+                    </Dropdown.Menu>
+                </Dropdown>
+                <Dropdown className='navbar-dropdown-container'>
+                    <Dropdown.Toggle className='navbar-dropdown-links' variant="success" 
+                    id="dropdown-basic">
+                        Donate
+                    </Dropdown.Toggle>
+                    <Dropdown.Menu className='navbar-dropdown-links-donate' >
+                        <Dropdown.Item 
+                        target="_blank" href='https://www.paypal.com/donate/?hosted_button_id=LZGPUFLUNZC8E'>
+                            Donate via PayPal
+                        </Dropdown.Item>
+                    </Dropdown.Menu>
+                </Dropdown>
+                </Nav>
+             <Nav>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

@@ -1,0 +1,27 @@
+                <Dropdown className='navbar-dropdown-parent' title='Services' id="collasible-nav-dropdown1"
+                show={show} onMouseEnter={showDropdown1} onMouseLeave={hideDropdown1}>
+                    <a className='navbar-dropdown-links' href='/services'>Services</a>
+                </Dropdown>
+            <Dropdown className='navbar-dropdown-parent' title='Donate' id="collasible-nav-dropdown"
+            show={show} onMouseEnter={showDropdown} onMouseLeave={hideDropdown}>
+                <a className='navbar-dropdown-links' href='/donate'>Donate</a>
+            </Dropdown>
+
+
+
+            <Dropdown>
+                    <Dropdown.Toggle id="dropdown-menu-1">
+                        Services
+                    </Dropdown.Toggle>
+                    <Dropdown.Menu>
+                        <Dropdown.Item href='/quran-programs'>
+                            Youth Quran Program
+                        </Dropdown.Item>
+                        <Dropdown.Item ref='/quran-programs'>
+                            Adult Quran Program
+                        </Dropdown.Item>
+                        <Dropdown.Itemh ref='/quran-programs'>
+                            New Muslim Quran Program
+                        </Dropdown.Itemh>
+                    </Dropdown.Menu>
+                </Dropdown>
