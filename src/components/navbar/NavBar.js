@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Navbar, Nav, Button } from "react-bootstrap";
 
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './NavBar.css'
+import logo from './logo192.png'
 
 
 function NavBar() {
@@ -16,15 +17,29 @@ function NavBar() {
     setShow(false);
     }
 
+    const [show1, setShow1] = useState(false);
+    const showDropdown1 = (e)=>{
+    setShow1(!show1);
+    }
+    const hideDropdown1 = e => {
+    setShow1(false);
+    }
+
 
 
 
     return (
-        <Navbar bg="light" expand="lg">
-        <Navbar.Brand href="#">Brand</Navbar.Brand>
+        <Navbar className='navbar-container' expand="lg">
+        <Navbar.Brand href="#">
+            <h1 className='navbar-logo-h1' >
+                <img className='navbar-logo-img' src={logo} alt='' />
+                MCM Phoenix
+            </h1>
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
+
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="mr-auto">
+          <Nav className="navbar-contents">
             <Nav.Link href="#">Home</Nav.Link>
             <Nav.Link href="#">About</Nav.Link>
             <Nav.Link href="#">Contact</Nav.Link>

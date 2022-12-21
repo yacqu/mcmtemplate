@@ -1,4 +1,22 @@
 
 .navbar-container {
+    padding: 10px 20px 10px;
     display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.navbar-logo-h1 {
+    font-weight: 600;
+}
+
+.navbar-logo-img {
+    width: 30px;
+    height: 30px;
+}
+
+.navbar-contents {
+    display: flex;
+    padding: 10px 80px 10px;
 }
