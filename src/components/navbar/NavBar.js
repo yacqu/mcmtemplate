@@ -4,32 +4,14 @@ import { Navbar, Nav, Button, Dropdown } from "react-bootstrap";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './NavBar.css'
-import logo from './logo192.png'
+import logo from './logo-mcm-circle.png'
 
 
 function NavBar() {
 
-    const [show, setShow] = useState(false);
-    const showDropdown = (e)=>{
-        setShow(!show);
-    }
-    const hideDropdown = e => {
-        setShow(false);
-    }
-
-    const showDropdown1 = (f)=>{
-        setShow(!show);
-    }
-    const hideDropdown1 = f => {
-        setShow(false);
-    }
-
-
-
-
     return (
         <Navbar className='navbar-container'  style={{ ".navbar .dropdown:hover .dropdown-menu": { display: "block" } }} expand="lg">
-        <Navbar.Brand href="#">
+        <Navbar.Brand className='navbar-logo-container' href="#">
             <h1 className='navbar-logo-h1' >
                 <img className='navbar-logo-img' src={logo} alt='' />
                 MCM Phoenix
@@ -54,7 +36,7 @@ function NavBar() {
                     id="dropdown-basic">
                         Services
                     </Dropdown.Toggle>
-                    <Dropdown.Menu variant="light" show>
+                    <Dropdown.Menu className='navbar-dropdown-links-donate' variant="light" show>
                         <Dropdown.Item href='/quran-programs'>
                             Youth Quran Program
                         </Dropdown.Item>
