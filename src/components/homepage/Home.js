@@ -2,7 +2,7 @@ import React from 'react'
 import ImageTitle from '../generic/imagetitle/ImageTitle'
 import CardsItem from '../generic/cards/CardsItem'
 import VideoShow from '../generic/videoshow/VideoShow';
-import HomeDonation from './home_donation_section/HomeDonation';
+import HomeDonation from './video_section/HomeDonation';
 
 
 

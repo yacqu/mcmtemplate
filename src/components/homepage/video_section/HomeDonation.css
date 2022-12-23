@@ -1,0 +1,181 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Andada+Pro:wght@700&family=Hahmlet:wght@100;800;900&family=Lora&display=swap');
+
+.home-donation-wrapper {
+    padding: 0%; 
+    background-image: linear-gradient(180deg, #cfcece, #b9b9b9);
+
+}
+
+.home-donation-content-wrapper{
+    padding: 5% 18% 5%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.home-donation-container {
+    padding: 2% 3% 1%;
+    max-width: 800px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 15px;
+    backdrop-filter: blur(20px);
+    background-color: rgba(221, 218, 218, 0.5);
+    box-shadow: 0 1px 12px rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.home-donation-title-container {
+    padding: 10px 20px 10px;
+    width: 100%;
+    max-width: 1000px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+    background-color: rgba(240, 237, 237, 0.5);
+    background-image: linear-gradient(180deg,#dbdbdb ,#e7e6e6 );
+    box-shadow: 0 1px 12px rgba(94, 94, 94, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+
+.home-donation-title-h1 {
+    color: rgb(167, 165, 165);
+    font-weight: 500;
+    font-size: 40px;
+    text-align: center;
+
+    padding: 1px 2px 10px;
+    text-align: left;
+    font-family: 'Hahmlet', serif;
+    border-radius: 10px;
+
+	-webkit-text-stroke: 2px #282828;
+	text-shadow: 1px 6px 6px #282828;
+}
+
+.home-donation-title-h5 {
+    color: rgb(214, 214, 214);
+    font-size: 18px;
+    font-weight: 200;
+    padding: 5px 10px 5px;
+    text-align: left;
+    font-family: 'Lora', serif;
+    border-radius: 10px;
+
+	-webkit-text-stroke: 1px #6e6e6e;
+	text-shadow: 0px 1px 1px #3b3b3b;
+
+    border-radius: 2px;
+    backdrop-filter: blur(20px);
+    background-color: rgba(221, 218, 218, 0.5);
+    background-image: linear-gradient(180deg,#d1cdcd ,#e9e6e6 );
+
+    box-shadow: 0 1px 10px rgba(58, 58, 58, 0.25);
+    border: 0.5px  rgba(0, 0, 0, 0.3);
+}
+
+.home-donation-content {
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home-donation-content-left {
+    padding: 1px 9px 10px 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.home-donation-content-left-container {
+    padding: 10px 20px 20px 20px;
+    width: 70%;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    border-radius: 15px;
+    box-shadow: 0 1px 12px rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.home-donation-content-left-h6 {
+    padding: 10px 1px 10px;
+    font-family: 'Andada Pro', serif;
+    font-size: 28px;
+    font-weight: 900;
+    text-align: left;
+    text-overflow: unset;
+
+}
+
+.home-donation-content-left-h6-amount {
+    padding: 1px 20px 1px;
+    font-family: 'Andada Pro', serif;
+    font-size: 30px;
+    font-weight: 900;
+    text-align: center;
+
+}
+
+.home-donation-content-left-p {
+    padding: 8px 50px 1px;
+    font-family: 'Lora', serif;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: left;
+    color: rgb(58, 57, 57);
+
+}
+
+.home-donation-content-left-h7 {
+    padding: 1px 4px 15px;
+    font-size: 14px;
+}
+
+.home-donation-btn {
+    font-size: 22px;
+    border-radius: 10px;
+    padding: 10px 40px 10px;
+    background-color: rgb(158, 155, 155);
+    border-radius: 15px;
+    box-shadow: 0 1px 12px rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.home-donation-btn:hover {
+    color: rgb(179, 178, 178);
+    background-color: rgb(128, 125, 125);
+    border-radius: 15px;
+    box-shadow: 0 2px 12px rgba(63, 62, 62, 0.25);
+    border: 1px solid rgba(206, 206, 206, 0.3);
+}
+
+.home-donation-content-right {
+    padding: 10px 10px 10px;
+    width: 100%;
+}
+
+.home-donation-content-right-img {
+    width: 100%;
+    border-radius: 10px;
+
+}

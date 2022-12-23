@@ -10,7 +10,7 @@ import logo from './logo-mcm-circle.png'
 function NavBar() {
 
     return (
-        <Navbar className='navbar-container'  style={{ ".navbar .dropdown:hover .dropdown-menu": { display: "block" } }} expand="lg">
+        <Navbar fixed='top' className='navbar-container'  style={{ ".navbar .dropdown:hover .dropdown-menu": { display: "block" } }} expand="lg">
         <Navbar.Brand className='navbar-logo-container' href="#">
             <h1 className='navbar-logo-h1' >
                 <img className='navbar-logo-img' src={logo} alt='' />
