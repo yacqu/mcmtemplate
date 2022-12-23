@@ -7,11 +7,12 @@ function CardsItem(props) {
     <a className='card-link-a' href={props.link} >
       <div className='card-content-container'>
         <div className='card-content'>
-          <img className='card-image'
-          src={props.image} alt='' />
-          <p className='card-description-text'>
-            {props.text}
-          </p>
+          <img className='card-image' src={props.image} alt='' />
+          <div className='card-description-container'>
+            <p className='card-description-text'>
+              {props.text}
+            </p>
+          </div>
         </div>
       </div>
     </a>
