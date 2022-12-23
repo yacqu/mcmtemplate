@@ -3,7 +3,8 @@
 
 .home-donation-wrapper {
     padding: 0%; 
-    background-image: linear-gradient(180deg, #cfcece, #b9b9b9);
+    background-image: linear-gradient(180deg, #cfcece, #c7c7c7);
+    opacity: 0.8;
 
 }
 
