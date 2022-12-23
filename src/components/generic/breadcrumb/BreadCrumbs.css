@@ -1,0 +1,79 @@
+.bc-top-wrapper {
+    padding: 0%;
+    
+}
+
+
+.bc-wrapper {
+    padding: 1%;
+
+    background-image: linear-gradient(180deg, #b3b3b3, #d8d4d4);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.5px);
+    -webkit-backdrop-filter: blur(4.5px);
+}
+
+.bc-container {
+    padding: 1px 80px 1px; 
+}
+
+.bc-list-ul {
+    padding: 1px 2px 1px 10px;
+    display: flex;
+    flex-direction: row ;
+    align-items: flex-start;
+    justify-content: space;
+    list-style-type: none;
+
+}
+
+.bc-list-ul-a {
+    padding: 1px 1px 10px 2px;
+    text-decoration: none;
+} 
+
+.bc-list-ul-a:visited {
+    padding: 1px 1px 10px 2px;
+    text-decoration: none;
+    color: rgb(54, 52, 52);
+} 
+
+.bc-list-li {
+    padding: 1px 1px 10px 2px;
+    text-decoration: none;
+}
+
+.bc-list-li:hover{
+    color: rgb(151, 143, 143);
+
+}
+
+.bc-list-a {
+    text-decoration: none;
+}
+
+.bc-list-a:hover{
+    text-decoration: none;
+    color:rgb(51, 51, 46);
+}
+
+.bc-list-a:visited{
+    text-decoration: none;
+    color: rgb(59, 58, 58);
+}
+
+.bc-list-a::before {
+    content: '>>';
+    color: lightgray;
+    padding: 1px 10px 10px;
+}
+
+
+
+@media (max-width: 600px) {
+    .bc-list-ul {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+}

@@ -6,11 +6,16 @@ import HomeDonation from './video_section/HomeDonation';
 import LearnSection from './learn_section/LearnSection';
 
 import './Home.css'
+import BreadCrumbs from '../generic/breadcrumb/BreadCrumbs';
 
 
 function Home() {
 
   const videoPath = "/videos/vid-homepage.mp4"
+
+  const breadCrumbMap = {
+    'About': '/about'
+  }
 
   const imageMap = {
     "Image 1": {
@@ -41,6 +46,11 @@ function Home() {
         padding:'10px 0px 1px'}}>
       <ImageTitle imagelink='/images/img-homepage-top.jpg' imagetext='Welcome to MCM Phoenix' />
       </div> 
+
+      <div>
+        <BreadCrumbs breadCrumbMap={breadCrumbMap} />
+      </div>
+
       <div className='home-page-spacer'>
           <div className='home-page-spacer-container'>
           <div className='cards-wrapper' >

@@ -6,9 +6,20 @@
     justify-content: center;
     align-items: center ;
     flex-direction: column;
-    background-color: rgb(241, 241, 241);
-    border-radius: 2%;
     
+    background: linear-gradient(180deg, #d8d4d4, #faf8f8)
+      , radial-gradient(
+        circle at 6.7% 75%,
+        rgba(214, 214, 214, 0.5),
+        rgba(226, 226, 226, 0) 70.71%
+      ),
+      radial-gradient(
+        circle at 72.3% 75%,
+        rgba(181, 182, 181, 0.5),
+        rgba(204, 204, 204, 0) 70.71%
+    ) rgb(233, 233, 233);
+    border-radius: 0%;
+
 }
 
 .home-page-spacer-containerr {
