@@ -7,6 +7,7 @@ import Home from './components/homepage/Home';
 import Footer from './components/footer/Footer';
 import About from './components/aboutpage/About';
 import MasjidReconstruction from './components/masjidreconstructionpage/MasjidReconstruction';
+import Dev from './components/devpage/Dev';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path='/' element={<Home/>}  />
           <Route path='/about' element={<About/>}  />
           <Route path='/masjid-reconstruction' element={<MasjidReconstruction/>}  />
+          <Route path='/dev' element={<Dev/>}  />
 
         </Routes>
         <Footer />
