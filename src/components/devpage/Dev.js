@@ -3,9 +3,11 @@ import PrayerTimes from '../prayertimeswidget/PrayerTimes'
 
 function Dev() {
   return (
-    <div style={{padding:'10%'}}>
-        <PrayerTimes />
-    </div>
+    <>
+        <div className='prayer-times'>
+            <PrayerTimes />
+        </div>
+    </>
   )
 }
 

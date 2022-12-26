@@ -10,7 +10,7 @@ import logo from './logo-mcm-circle.png'
 function NavBar() {
 
     return (
-        <Navbar fixed='top' className='navbar-container'  style={{ ".navbar .dropdown:hover .dropdown-menu": { display: "block" } }} expand="lg">
+    <Navbar  className='navbar-container'  style={{ ".navbar .dropdown:hover .dropdownMenu": { display: "block" } }} expand="lg">
         <Navbar.Brand className='navbar-logo-container' href="#">
             <h1 className='navbar-logo-h1' >
                 <img className='navbar-logo-img' src={logo} alt='' />
@@ -36,7 +36,7 @@ function NavBar() {
                     id="dropdown-basic">
                         Services
                     </Dropdown.Toggle>
-                    <Dropdown.Menu className='navbar-dropdown-links-donate' variant="light" show>
+                    <Dropdown.Menu className='navbar-dropdown-links-menu' variant="light" >
                         <Dropdown.Item href='/quran-programs'>
                             Youth Quran Program
                         </Dropdown.Item>
@@ -55,7 +55,7 @@ function NavBar() {
                     id="dropdown-basic">
                         Donate
                     </Dropdown.Toggle>
-                    <Dropdown.Menu className='navbar-dropdown-links-donate' >
+                    <Dropdown.Menu className='navbar-dropdown-links-menu' >
                         <Dropdown.Item 
                         target="_blank" href='https://www.paypal.com/donate/?hosted_button_id=LZGPUFLUNZC8E'>
                             Donate via PayPal
@@ -66,7 +66,7 @@ function NavBar() {
              <Nav>
           </Nav>
         </Navbar.Collapse>
-      </Navbar>
+    </Navbar>
   )
 }
 
