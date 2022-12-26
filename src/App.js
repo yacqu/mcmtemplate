@@ -8,6 +8,7 @@ import Footer from './components/footer/Footer';
 import About from './components/aboutpage/About';
 import MasjidReconstruction from './components/masjidreconstructionpage/MasjidReconstruction';
 import Dev from './components/devpage/Dev';
+import Donate from './components/donatepage/Donate';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path='/about' element={<About/>}  />
           <Route path='/masjid-reconstruction' element={<MasjidReconstruction/>}  />
           <Route path='/dev' element={<Dev/>}  />
+          <Route path='/donate' element={<Donate/>}  />
 
         </Routes>
         <Footer />

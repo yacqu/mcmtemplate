@@ -7,11 +7,13 @@ function PrayerTimes() {
 
     const [apiData, setApiData] = useState(null);
     const desiredPrayers = ["Fajr", "Sunrise", "Dhuhr", "Asr", "Maghrib", "Isha"];
+    const desiredDate = ['readable']
 
     useEffect(() => {
         async function fetchData() {
             const response = await axios.get('http://api.aladhan.com/v1/timingsByCity?city=Dubai&country=United Arab Emirates&method=8');
             {/* console.log(response); */}
+            console.log(response);
             setApiData(response);
         }
         fetchData();
@@ -29,13 +31,22 @@ function PrayerTimes() {
                             <h1 className='prayer-times-widget-header-title-h1'>
                                 Prayer Times
                             </h1>
-                        </div>
+                            <div className='prayer-times-widget-sub-header-title'>
+                                <h6 className='prayer-times-widget-sub-header-title-h6'>
+                                    Phoenix, Arizona
+                                </h6>
+                                <h7 className='prayer-times-widget-sub-header-title-h6'>
+                                    {apiData && Object.entries(apiData.data.data.date).map(([key, value]) => {
+                                    if (desiredDate.includes(key)) {
+                                    return (
+                                        <span key={key}>{value}</span>
 
-                        <div className='prayer-times-widget-sub-header-title'>
-                            hi
-
+                                    )}})}
+                                </h7>
+                            </div>
+                
                         </div>
-                         
+                          
                         <ul className='prayer-times-widget-ul'>
                             {apiData && Object.entries(apiData.data.data.timings).map(([key, value]) => {
                                 if (desiredPrayers.includes(key)) {
