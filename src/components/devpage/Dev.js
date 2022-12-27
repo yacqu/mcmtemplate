@@ -1,5 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
+import CallAction from '../figma/CallAction'
+import DonateSection from '../figma/DonateSection'
 
 import Hero from '../figma/Hero'
 import ServiceSection from '../figma/ServiceSection'
@@ -12,6 +14,8 @@ function Dev() {
         
         <Hero />
         <ServiceSection />
+        <DonateSection />
+        <CallAction />
 
 
 

@@ -36,7 +36,7 @@ const NavBarContainer = styled.div`
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
-  padding: 1% 0% 1%;
+  padding: 2% 0% 1%;
   font-family: 'Outfit', sans-serif;
 `;
 const NavBarContainerContent = styled.div`
@@ -57,6 +57,10 @@ const Text1 = styled.div`
   font-family: Outfit;
   line-height: 27.5px;
   text-transform: uppercase;
+  cursor: pointer;
+  &: hover {
+    opacity: 0.8;
+  } ;
 `;
 const Text2 = styled.div`
     width: 100%;
@@ -64,6 +68,10 @@ const Text2 = styled.div`
   font-size: 20px;
   font-family: Outfit;
   line-height: 27.5px;
+  cursor: pointer;
+  &: hover {
+    opacity: 0.7;
+  } ;
 `;
 const Text3 = styled.div`
     width: 100%;
@@ -71,6 +79,10 @@ const Text3 = styled.div`
     font-size: 20px;
     font-family: Outfit;
     line-height: 27.5px;
+    cursor: pointer;
+    &: hover {
+      opacity: 0.7;
+    } ;
 `;
 const Text4 = styled.div`
     width: 100%;
@@ -78,6 +90,10 @@ const Text4 = styled.div`
   font-size: 20px;
   font-family: Outfit;
   line-height: 27.5px;
+  cursor: pointer;
+  &: hover {
+    opacity: 0.7;
+  } ;
 `;
 const Text5 = styled.div`
     width: 100%;
@@ -88,4 +104,8 @@ const Text5 = styled.div`
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
+  cursor: pointer;
+  &: hover {
+    opacity: 0.7;
+  } ;
 `;

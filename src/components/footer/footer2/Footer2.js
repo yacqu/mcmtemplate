@@ -81,7 +81,8 @@ const FooterWrapper = styled.div`
   justify-content: center;
   align-items: center;
   background-color: #C0C9C0;
-  padding: 2% 0% 0%;
+  padding: 2% 0% 5%;
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
 
 `;
 

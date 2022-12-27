@@ -43,7 +43,7 @@ const HeroSectionWrapper = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 2% 1% 2%
+  padding: 10% 1% 2%
   
 `;
 const HeroSectionContainer = styled.div`
@@ -107,6 +107,10 @@ const DonateButton = styled.div`
   background-size: cover;
   border-radius: 51px;
   background-color: #618A68;
+  cursor: pointer;
+  &: hover {
+    box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.3);
+  } ;
 `;
 const Text2 = styled.div`
   width: 156px;
@@ -127,7 +131,10 @@ const VisitButton = styled.div`
   background-size: cover;
   border-radius: 51px;
   border: 1px solid #618A68;
-
+  cursor: pointer;
+  &: hover {
+    box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.3);
+  } ;
 `;
 const Text3 = styled.div`
   width: 111px;
@@ -144,5 +151,12 @@ const Image1 = styled.img`
   align-self: flex-start;
   margin: 1px 0px 0px 0px;
     border-radius: 20px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    box-shadow: rgba(50, 50, 93, 0.25) 
+    0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 
+    0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 
+    0px -2px 6px 0px inset;
+    cursor: pointer;
+    &: hover {
+      opacity: 0.8;
+    } ;
 `;

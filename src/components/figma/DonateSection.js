@@ -1,36 +1,37 @@
 import React from 'react'
 import styled from 'styled-components';
 
-function ServiceSection() {
+function DonateSection() {
   return (
     <ServicesWrapper>
         <ServicesContainer>
-            <Image src={`/images/img-home-services.jpg`} />
+            
             <ServicesContent>
                 <TitleColumn>
                     <TitleMain>
-                        SERVICES
+                        donation
                     </TitleMain>
                     <TitleHeader>
-                        Services offered at MCM phoenix
+                        Donate To Our New Masjid construction
                     </TitleHeader>
                     <Paragraph>
-                        Experience the Islamic guidance and support of MCM Phoenix through a
-                        range of services and activities.
+                        Help us build a beautiful and welcoming space for the entire
+                        community to come together and connect with their faith.
                     </Paragraph>
                 </TitleColumn>
                 <TitleColumnButton>
                     <Text3>
-                        Explore Services
+                        Donate Now
                     </Text3>
                 </TitleColumnButton>
             </ServicesContent>
+            <Image src={`/images/img-donate-section.png`} />
     </ServicesContainer>
   </ServicesWrapper>
   )
 }
 
-export default ServiceSection
+export default DonateSection
 
 const ServicesWrapper = styled.div`
   gap: 0px;
@@ -53,7 +54,7 @@ const ServicesContainer = styled.div`
 const Image = styled.img`
   width: 43.88%;
   height: 309px;
-  border-radius: 20px;
+   border-radius: 100px;
   align-self: flex-end;
   margin: 0px 0px 0% 0px;
   box-shadow: rgba(50, 50, 93, 0.25) 
@@ -66,11 +67,11 @@ const Image = styled.img`
   } ;
 `;
 const ServicesContent = styled.div`
-  gap: 29px;
+  gap: 30px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   padding: 0% 1% 1% 1%;
 `;
 const TitleColumn = styled.div`
@@ -79,11 +80,11 @@ const TitleColumn = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding: 1% 1% 1% 8%;
+  padding: 1% 1% 1% 0%;
 `;
 const TitleMain = styled.div`
   width: 24.5%;
-  margin: 0px 0px 0% 0%;
+  margin: 0px 2px 0% 1%;
   color: #1e361f;
   font-size: 20px;
   font-weight: 600;
@@ -118,11 +119,11 @@ const TitleColumnButton = styled.div`
   justify-content: flex-start;
   align-self: flex-start;
   align-items: center;
-  margin: 0px 0px 0px 8%;
+  margin: 0px 0px 0px .44%;
   padding: 1.64% 3.75% 2.3% 3.97%;
   background-size: cover;
   border-radius: 51px;
-  background-color: #618A68;
+  background-color: #618A68;  
   cursor: pointer;
   &: hover {
     box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.3);
