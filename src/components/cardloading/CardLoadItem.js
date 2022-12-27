@@ -27,7 +27,7 @@ function CardLoadItem(props) {
             <Button  className='card-load-footer-btn' variant="success">
                 <a className='card-load-footer-btn-a' href={props.button} >Donate Now</a>
                 </Button>
-      </Card.Footer>
+      </Card.Footer> 
     </Card>
 
   )
