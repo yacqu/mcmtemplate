@@ -32,7 +32,7 @@ const CallActionWrapper = styled.div`
     justify-content: center;
     align-items: center;
   padding: 8% 15% 8%;
-
+ 
 `;
 
 const CallActionContainer = styled.div`
